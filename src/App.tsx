@@ -28,9 +28,9 @@ function App() {
               <button onClick={() => scrollToSection('hero')} className="text-gray-600 hover:text-emerald-600 transition-colors">
                 Inicio
               </button>
-              <button onClick={() => scrollToSection('carta')} className="text-gray-600 hover:text-emerald-600 transition-colors">
+              {/* <button onClick={() => scrollToSection('carta')} className="text-gray-600 hover:text-emerald-600 transition-colors">
                 Carta
-              </button>
+              </button> */}
               <button onClick={() => scrollToSection('historia')} className="text-gray-600 hover:text-emerald-600 transition-colors">
                 Historia
               </button>
@@ -47,35 +47,38 @@ function App() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-fixed"
           style={{
-            backgroundImage: 'url(https://images.pexels.com/photos/1630039/pexels-photo-1630039.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop)',
+            backgroundImage: window.innerWidth < 768
+              ? 'url(patio-frente-2.jpg)' //movil
+              : 'url(patio-frente-3.jpg)', //desktop
             transform: `translateY(${scrollY * 0.5}px)`
-          }}
-        >
-          <div className="absolute inset-0 bg-black/40"></div>
+          }}>
+            <div className="absolute inset-0" style={{ background: 'rgba(27, 25, 25, 0.22)' }}>
+            </div>
         </div>
         
-        <div className="relative z-10 text-center text-white px-6">
-          <h1 className="font-serif text-6xl md:text-8xl font-bold mb-6 animate-fade-in">
+        <div className="relative z-10 text-center text-white px-6">        
+          {/* <h1 className="font-serif text-6xl md:text-8xl font-bold mb-6 animate-fade-in">
             Al Santuario
           </h1>
-          <p className="text-xl md:text-2xl mb-8 font-light max-w-2xl mx-auto">
-            Ofrecemos una experiencia mediterránea auténtica en plena conexión con la naturaleza. 
-          </p>
-          <button 
+         <p className="font-serif text-xl md:text-2xl mb-8 font-light max-w-2xl mx-auto">
+            Donde la naturaleza abraza cada momento y cada sabor cuenta una historia...
+          </p> */}
+          {/* //Boton para descubrir la carta */}
+          {/* <button 
             onClick={() => scrollToSection('carta')}
             className="inline-flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-full transition-all duration-300 hover:scale-105"
           >
             <span>Descubre nuestra carta</span>
             <ChevronDown className="h-5 w-5" />
-          </button>
+          </button>*/ }
         </div>
 
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <ChevronDown className="h-8 w-8 text-white" />
         </div>
       </section>
-
-      {/* Carta Section */}
+{/* 
+      {/* Carta Section
       <section id="carta" className="py-20 bg-gradient-to-b from-rose-50 to-rose-50" style={{ background: 'linear-gradient(to bottom, #f9f2e5, #f3e5d0)' }}>
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
@@ -89,7 +92,7 @@ function App() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            {/* PDF Viewer Container */}
+            {//* PDF Viewer Container}            
             <div className="rounded-lg shadow-xl overflow-hidden border border-rose-100" style={{ backgroundColor: '#f9f2e5' }}>
               <div className="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white p-6 text-center">
                 <div className="flex items-center justify-center space-x-3 mb-4">
@@ -101,7 +104,7 @@ function App() {
                 </p>
               </div>
               
-              {/* PDF Placeholder */}
+              {/* PDF Placeholder }
               <div className="relative bg-rose-25 min-h-[600px] flex items-center justify-center" style={{ backgroundColor: '#f9f2e5' }}>
                 <div className="text-center p-8">
                   <FileText className="h-24 w-24 text-emerald-500 mx-auto mb-6" />
@@ -125,7 +128,7 @@ function App() {
                 </div>
               </div>
               
-              {/* Download/View Button */}
+              {/* Download/View Button }
               <div className="p-6 text-center border-t border-rose-100" style={{ backgroundColor: '#f9f2e5' }}>
                 <button className="inline-flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-full transition-all duration-300 hover:scale-105">
                   <FileText className="h-5 w-5" />
@@ -138,7 +141,8 @@ function App() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      
 
       {/* Historia Section */}
       <section id="historia" className="py-20 bg-gradient-to-b from-rose-50 to-emerald-50" style={{ background: 'linear-gradient(to bottom, #f3e5d0, #ecfdf5)' }}>
@@ -154,13 +158,16 @@ function App() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6">
               <h3 className="font-serif text-2xl font-semibold text-gray-800">
-                Una experiencia gastronómica
+                Porque algunos lugares no solo se visitan... se sienten.
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                En el corazón del Cabo de San Antonio, dentro de la Reserva Natural del Montgó en Xàbia, nuestro restaurante ofrece una experiencia mediterránea auténtica en plena conexión con la naturaleza.
+                En el abrazo silencioso del Cabo de San Antonio, donde la Reserva Natural del Montgó susurra historias milenarias, descubre un santuario gastronómico que despierta los sentidos.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Ubicado en una casa reformada con encanto, hemos creado un espacio donde puedes sentirte como en casa. La calidez del entorno y la atención cercana de <strong>Pablo Català</strong> y <strong>Andrea Castro</strong> junto a su equipo hacen que cada visita sea especial. Disfruta de cocina mediterránea de calidad y una bodega selecta, en un lugar donde la tranquilidad y el buen gusto se encuentran.
+                Nuestra casa, renacida del tiempo con alma mediterránea, te invita a vivir momentos que trascienden lo cotidiano. Aquí, cada rincón respira hospitalidad genuina, cada plato es una caricia al paladar y cada copa de nuestra bodega cuidadosamente seleccionada cuenta la historia de nuestra tierra.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                Este es tu refugio donde el tiempo se detiene, donde la brisa marina acaricia cada conversación y donde la magia del Mediterráneo se vuelve tangible en cada experiencia.
               </p>
             </div>
             <div className="relative">
@@ -230,20 +237,20 @@ function App() {
             <div className="w-24 h-1 bg-emerald-500 mx-auto"></div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+            <div className="grid lg:grid-cols-2 gap-12">
             {/* Mapa */}
             <div className="relative">
-              <div className="relative overflow-hidden rounded-lg shadow-xl">
-                <img 
-                  src="https://images.pexels.com/photos/7919/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
-                  alt="Ubicación del restaurante en la Costa Brava"
-                  className="w-full h-96 object-cover"
+              <div className="relative w-full">
+                <img
+                  src="mapa.png"
+                  alt="Ubicación del restaurante en el Cabo de San Antonio"
+                  className="w-full h-auto object-contain rounded-lg shadow-xl mx-auto"
                 />
               </div>
               <div className="mt-4 text-center">
-                <p className="text-gray-600">
-                  Ctra. del Cap de Sant Antoni, 27, 03730 Xàbia, Alicante
-                </p>
+              <p className="text-gray-600">
+                Ctra. del Cap de Sant Antoni, 27, 03730 Xàbia, Alicante
+              </p>
               </div>
             </div>
 
@@ -269,7 +276,7 @@ function App() {
                     <div>
                       <h4 className="font-semibold text-gray-800">Horarios</h4>
                       <p className="text-gray-600">Martes - Domingo</p>
-                      <p className="text-gray-600">19:30 - 23:00</p>
+                      <p className="text-gray-600">19:30 - 23:30</p>
                       <p className="text-sm text-gray-500">Cerrado los lunes</p>
                     </div>
                   </div>
@@ -292,26 +299,21 @@ function App() {
                 </h3>
                 <div className="flex space-x-4">
                   <a 
-                    href="#" 
+                    href="https://www.instagram.com/alsantuario.xabia/#" 
                     className="flex items-center justify-center w-12 h-12 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition-colors"
                   >
                     <Instagram className="h-6 w-6" />
                   </a>
+
                   <a 
-                    href="#" 
-                    className="flex items-center justify-center w-12 h-12 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition-colors"
-                  >
-                    <Facebook className="h-6 w-6" />
-                  </a>
-                  <a 
-                    href="#" 
+                    href="mailto:alsantuarioxabia@gmail.com" 
                     className="flex items-center justify-center w-12 h-12 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition-colors"
                   >
                     <Mail className="h-6 w-6" />
                   </a>
                 </div>
                 <p className="text-gray-600 mt-4">
-                  @alsantuario_xabia
+                  @alsantuario.xabia
                 </p>
               </div>
             </div>
@@ -324,14 +326,13 @@ function App() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center">
             <div className="flex items-center justify-center space-x-3 mb-4">
-              <div className="p-2 rounded-lg" style={{ backgroundColor: '#f9f2e5' }}>
-                <img 
-                  src="/public/image.png" 
-                  alt="Al Santuario Logo" 
-                  className="h-10 w-auto object-contain"
-                />
-              </div>
-              <span className="font-serif text-2xl font-bold">Al Santuario</span>
+                <div className="rounded overflow-hidden">
+                  <img 
+                    src="logo.png" 
+                    alt="Al Santuario Logo" 
+                    className="h-32 w-auto object-contain"
+                  />
+                </div>
             </div>
             <p className="text-gray-400 mb-4">
               Espai gastronòmic i vins - Xàbia
