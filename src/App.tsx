@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { MapPin, Phone, Clock, Instagram, Facebook, Mail, ChevronDown, FileText } from 'lucide-react';
+import { MapPin, Phone, Clock, Instagram, Facebook, Mail, ChevronDown, FileText, MessageCircleMore } from 'lucide-react';
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -184,15 +184,15 @@ function App() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="group relative overflow-hidden rounded-lg shadow-lg">
               <img 
-                src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
-                alt="Paella tradicional"
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+              src="comida/vino.jpg"
+              alt="Bodega de vinos auténtica"
+              className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h4 className="font-semibold text-lg">Paella Marinera</h4>
-                  <p className="text-sm">Nuestra especialidad desde 1952</p>
-                </div>
+              <div className="absolute bottom-4 left-4 text-white">
+                <h4 className="font-semibold text-lg">Nuestra bodega</h4>
+                <p className="text-sm">Una selección de vinos muy especial</p>
+              </div>
               </div>
             </div>
 
@@ -212,14 +212,14 @@ function App() {
 
             <div className="group relative overflow-hidden rounded-lg shadow-lg">
               <img 
-                src="https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                src="patio-back.jpg"
                 alt="Ambiente del restaurante"
                 className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4 text-white">
                   <h4 className="font-semibold text-lg">Ambiente Acogedor</h4>
-                  <p className="text-sm">Vista al mar mediterráneo</p>
+                  <p className="text-sm">En plena Reserva Natural del Montgó</p>
                 </div>
               </div>
             </div>
@@ -262,21 +262,21 @@ function App() {
                 </h3>
                 
                 <div className="space-y-6">
-                  <div className="flex items-start space-x-4">
-                    <Phone className="h-6 w-6 text-emerald-600 mt-1" />
+                    <div className="flex items-start space-x-4">
+                    <MessageCircleMore className="h-6 w-6 text-emerald-600 mt-1" />
                     <div>
                       <h4 className="font-semibold text-gray-800">Reservas</h4>
                       <p className="text-gray-600">+34 685 76 11 65</p>
                       <p className="text-sm text-gray-500">Recomendamos reservar con antelación</p>
                     </div>
-                  </div>
+                    </div>
 
                   <div className="flex items-start space-x-4">
                     <Clock className="h-6 w-6 text-emerald-600 mt-1" />
                     <div>
                       <h4 className="font-semibold text-gray-800">Horarios</h4>
                       <p className="text-gray-600">Martes - Domingo</p>
-                      <p className="text-gray-600">19:30 - 23:30</p>
+                      <p className="text-gray-600">19:00 - 23:30</p>
                       <p className="text-sm text-gray-500">Cerrado los lunes</p>
                     </div>
                   </div>
