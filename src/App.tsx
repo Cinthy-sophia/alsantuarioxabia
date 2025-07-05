@@ -160,13 +160,13 @@ function App() {
               <h3 className="font-serif text-2xl font-semibold text-gray-800">
                 Porque algunos lugares no solo se visitan... se sienten.
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="font-serif text-gray-600 leading-relaxed">
                 En el abrazo silencioso del Cabo de San Antonio, donde la Reserva Natural del Montgó susurra historias milenarias, descubre un santuario gastronómico que despierta los sentidos.
               </p>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="font-serif text-gray-600 leading-relaxed">
                 Nuestra casa, renacida del tiempo con alma mediterránea, te invita a vivir momentos que trascienden lo cotidiano. Aquí, cada rincón respira hospitalidad genuina, cada plato es una caricia al paladar y cada copa de nuestra bodega cuidadosamente seleccionada cuenta la historia de nuestra tierra.
               </p>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="font-serif text-gray-600 leading-relaxed">
                 Este es tu refugio donde el tiempo se detiene, donde la brisa marina acaricia cada conversación y donde la magia del Mediterráneo se vuelve tangible en cada experiencia.
               </p>
             </div>
