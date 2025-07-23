@@ -140,9 +140,16 @@ function App() {
           {/* Historia Content */}
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6 text-justify">
-              <h3 className="font-serif text-3xl md:text-4xl font-semibold text-gray-800">
-              Porque algunos lugares no solo se visitan... se sienten
-              </h3>
+                {window.innerWidth < 768 ? (
+                <h3 className="font-serif text-3xl md:text-4xl font-semibold text-gray-800">
+                  Porque algunos lugares no solo se visitan... 
+                  <p>se sienten</p>
+                </h3>
+                ) : (
+                <h3 className="font-serif text-3xl md:text-4xl font-semibold text-gray-800">
+                  Porque algunos lugares no solo se visitan... se sienten
+                </h3>
+                )}
               <p className="font-serif text-md md:text-xl text-gray-900 leading-relaxed">
               En el abrazo silencioso del Cabo de San Antonio, donde la Reserva Natural del Montgó susurra historias milenarias, descubre un santuario gastronómico que despierta los sentidos.
               </p>
