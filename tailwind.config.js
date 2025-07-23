@@ -29,7 +29,30 @@ export default {
           800: '#065f46',
           900: '#064e3b',
         }
-      }
+      },
+      fontFamily: {
+        sans: [
+          '"Roboto"',
+          '"Open Sans"',
+          '"Montserrat"',
+          'ui-sans-serif',
+          'system-ui'
+        ],
+        serif: [
+          '"Playfair Display"',
+          '"Merriweather"',
+          '"Lora"',
+          'ui-serif',
+          'Georgia'
+        ],
+        mono: [
+          '"Fira Mono"',
+          '"Menlo"',
+          '"Monaco"',
+          'ui-monospace',
+          'SFMono-Regular'
+        ]
+      },
     },
   },
   plugins: [],
