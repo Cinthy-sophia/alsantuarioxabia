@@ -279,7 +279,7 @@ function App() {
                     <div className="flex items-start space-x-4">
                     <MessageCircleMore className="h-6 w-6 text-emerald-600 mt-1" />
                     <div>
-                      <h4 className="font-semibold text-gray-800">Reservas por WhatsApp</h4>
+                      <h4 className="text-xl font-semibold text-gray-800">Reservas por WhatsApp</h4>
                       <p className="text-gray-600">+34 685 76 11 65</p>
                       <p className="text-sm text-gray-500">Recomendamos reservar con antelación</p>
                     </div>
@@ -288,17 +288,35 @@ function App() {
                   <div className="flex items-start space-x-4">
                     <Clock className="h-6 w-6 text-emerald-600 mt-1" />
                     <div>
-                      <h4 className="font-semibold text-gray-800">Horarios</h4>
-                      <p className="text-gray-600">Martes - Domingo</p>
-                      <p className="text-gray-600">19:00 - 23:30</p>
-                      <p className="text-sm text-gray-500">Cerrado los lunes</p>
+                      <h4 className="text-xl font-semibold text-gray-800">Horarios</h4>
+                      {/*Horario verano <p className="text-gray-600">Martes - Domingo</p>
+                        <p className="text-gray-600 font-semibold">19:00 - 23:30</p>
+                        <div className="h-1" /> */}
+                      <p className="text-gray-600">Miércoles</p>
+                        <p className="text-gray-600 font-semibold">19:00 - 23:00</p>
+                        <div className="h-1" />
+                        <p className="text-gray-600">Jueves</p>
+                      <p className="text-gray-600 font-semibold">12:00 - 15:00</p>
+                      <p className="text-gray-600 font-semibold">19:00 - 23:00</p>
+                      <div className="h-1" />
+                      <p className="text-gray-600">Viernes</p>
+                      <p className="text-gray-600 font-semibold">12:00 - 15:00</p>
+                      <p className="text-gray-600 font-semibold">19:00 - 23:30</p>
+                      <div className="h-1" />
+                      <p className="text-gray-600">Sábado</p>
+                      <p className="text-gray-600 font-semibold">12:00 - 15:00</p>
+                      <p className="text-gray-600 font-semibold">19:00 - 23:30</p>
+                      <div className="h-1" />
+                      <p className="text-gray-600">Domingo</p>
+                      <p className="text-gray-600 font-semibold">12:00 - 15:00</p>
+                      <p className="text-gray-600 font-semibold">19:00 - 23:00</p>
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-4">
                     <MapPin className="h-6 w-6 text-emerald-600 mt-1" />
                     <div>
-                      <h4 className="font-semibold text-gray-800">Dirección</h4>
+                      <h4 className="text-xl font-semibold text-gray-800">Dirección</h4>
                       <p className="text-gray-600">Ctra. del Cap de Sant Antoni, 27</p>
                       <p className="text-gray-600">03730 Xàbia, Alicante</p>
                     </div>
