@@ -92,7 +92,15 @@ function App() {
           <ChevronDown className="h-8 w-8 text-white animate-bounce" />
         </div>
       </section>
-
+      {/* Vacaciones Section*/}
+      {/* <section id="vacaciones" className="py-20 bg-gradient-to-b from-rose-50 to-rose-50" style={{ background: 'linear-gradient(to bottom, #f9f2e5, #f3e5d0)' }}>
+        <div className="max-w-6xl mx-auto px-6">
+          <p className="font-serif text-xl text-600 max-w-3xl mx-auto font-normal text-center">
+            Desde el lunes 05 de Enero, <strong>Al Santuario</strong> permanecerá cerrado hasta Marzo 2026. <br/> 
+            ¡Nos vemos pronto para seguir descubriendo sabores juntos!
+          </p>
+        </div>
+      </section>   */}
       {/* Carta Section*/}
       <section id="carta" className="py-20 bg-gradient-to-b from-rose-50 to-rose-50" style={{ background: 'linear-gradient(to bottom, #f9f2e5, #f3e5d0)' }}>
         <div className="max-w-6xl mx-auto px-6">
@@ -292,8 +300,8 @@ function App() {
                       {/*Horario verano <p className="text-gray-600">Martes - Domingo</p>
                         <p className="text-gray-600 font-semibold">19:00 - 23:30</p>
                         <div className="h-1" /> */}
-                      <p className="text-gray-600">Miércoles</p>
-                        <p className="text-gray-600 font-semibold">19:00 - 23:00</p>
+                      <p className="text-gray-600">Lunes, Martes y Miércoles</p>
+                        <p className="text-gray-600 font-semibold">DESCANSO</p>
                         <div className="h-1" />
                         <p className="text-gray-600">Jueves</p>
                       <p className="text-gray-600 font-semibold">12:00 - 15:00</p>
@@ -301,11 +309,11 @@ function App() {
                       <div className="h-1" />
                       <p className="text-gray-600">Viernes</p>
                       <p className="text-gray-600 font-semibold">12:00 - 15:00</p>
-                      <p className="text-gray-600 font-semibold">19:00 - 23:30</p>
+                      <p className="text-gray-600 font-semibold">19:00 - 23:00</p>
                       <div className="h-1" />
                       <p className="text-gray-600">Sábado</p>
                       <p className="text-gray-600 font-semibold">12:00 - 15:00</p>
-                      <p className="text-gray-600 font-semibold">19:00 - 23:30</p>
+                      <p className="text-gray-600 font-semibold">19:00 - 23:00</p>
                       <div className="h-1" />
                       <p className="text-gray-600">Domingo</p>
                       <p className="text-gray-600 font-semibold">12:00 - 15:00</p>
