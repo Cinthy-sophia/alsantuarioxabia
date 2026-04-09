@@ -300,24 +300,28 @@ function App() {
                       {/*Horario verano <p className="text-gray-600">Martes - Domingo</p>
                         <p className="text-gray-600 font-semibold">19:00 - 23:30</p>
                         <div className="h-1" /> */}
-                      <p className="text-gray-600">Lunes, Martes y Miércoles</p>
+                      <p className="text-gray-600">Lunes y Martes </p>
                         <p className="text-gray-600 font-semibold">DESCANSO</p>
                         <div className="h-1" />
+                        <p className="text-gray-600">Miércoles</p>
+                      <p className="text-gray-600 font-semibold">13:00 - 15:00</p>
+                      <p className="text-gray-600 font-semibold">19:00 - 22:00</p>
+                      <div className="h-1" />
                         <p className="text-gray-600">Jueves</p>
-                      <p className="text-gray-600 font-semibold">12:00 - 15:00</p>
-                      <p className="text-gray-600 font-semibold">19:00 - 23:00</p>
+                      <p className="text-gray-600 font-semibold">13:00 - 15:00</p>
+                      <p className="text-gray-600 font-semibold">19:00 - 22:00</p>
                       <div className="h-1" />
                       <p className="text-gray-600">Viernes</p>
-                      <p className="text-gray-600 font-semibold">12:00 - 15:00</p>
-                      <p className="text-gray-600 font-semibold">19:00 - 23:00</p>
+                      <p className="text-gray-600 font-semibold">13:00 - 15:00</p>
+                      <p className="text-gray-600 font-semibold">19:00 - 22:00</p>
                       <div className="h-1" />
                       <p className="text-gray-600">Sábado</p>
-                      <p className="text-gray-600 font-semibold">12:00 - 15:00</p>
-                      <p className="text-gray-600 font-semibold">19:00 - 23:00</p>
+                      <p className="text-gray-600 font-semibold">13:00 - 15:00</p>
+                      <p className="text-gray-600 font-semibold">19:00 - 22:00</p>
                       <div className="h-1" />
                       <p className="text-gray-600">Domingo</p>
-                      <p className="text-gray-600 font-semibold">12:00 - 15:00</p>
-                      <p className="text-gray-600 font-semibold">19:00 - 23:00</p>
+                      <p className="text-gray-600 font-semibold">13:00 - 15:00</p>
+                      <p className="text-gray-600 font-semibold">19:00 - 22:00</p>
                     </div>
                   </div>
 
@@ -378,7 +382,7 @@ function App() {
               Espai gastronòmic i vins - Xàbia
             </p>
             <p className="text-gray-500 text-sm">
-              © 2025 Al Santuario. Todos los derechos reservados.
+              © 2026 Al Santuario. Todos los derechos reservados.
             </p>
           </div>
         </div>
